@@ -1,0 +1,208 @@
+<!DOCTYPE HTML>
+<html lang="en" class="l-window-container">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8"/>
+    <title>Fantasy Names Generator</title>
+    <meta name="description" content="It takes real names analyse their patterns and mixes them up to create fictional fantasy names that looks like they could be real (not like bunch of random letters hard to read and impossible to pronaunce)."/>
+    <meta name="keywords" content="names ganerator, fantasy names generator, nickname generator"/>
+    <!--- JS ------------------>
+    <!--- HELPERS ------------------>
+    <script src="tests/tests-helpers.js"></script>
+    <script src="tests/tests-helpers-tests.js"></script>
+    <script src="random-helpers.js"></script>
+    <script src="tests/random-helpers-tests.js"></script>
+    <script src="math-helpers.js"></script>
+    <script src="tests/math-helpers-tests.js"></script>
+    <script src="collections-helpers.js"></script>
+    <script src="tests/collections-helpers-tests.js"></script>
+    <script src="dom-helpers.js"></script>
+    <script src="tests/dom-helpers-tests.js"></script>
+    <script src="regex-helpers.js"></script>
+    <script src="tests/regex-helpers-tests.js"></script>
+
+    <script src="real-names.js"></script>
+    <script src="tests/real-names-tests.js"></script>
+    
+    <script src="language-helpers.js"></script>
+    <script src="tests/language-helpers-tests.js"></script>
+    
+    <script src="splitter.js"></script>
+    <script src="generator.js"></script>
+    <script src="tests.js"></script>
+    <!--- CSS ----------------->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body class="l-body-container">
+    
+    <header class="l-header-container">
+      <img src="new-logo.png" class="logo-img"></img>
+      <div class="l-brand-container">
+	<h1 class="brand-title">Fantasy Names Generator</h1>
+        <p class="brand-description">It takes real names analyse their patterns and mixes them up to create fictional fantasy names that looks like they could be real (not like bunch of random letters hard to read and impossible to pronaunce).</p>
+      </div>
+    </header>
+    
+    <main class="l-main-container">
+
+      
+      <section class="l-section-container l-section-container--input" id="groups-root">
+
+        <p>Ipsum a arcu cursus vitae congue mauris rhoncus aenean vel. Magna eget est lorem ipsum dolor sit amet, consectetur adipiscing elit pellentesque habitant morbi tristique senectus et netus et malesuada!</p>
+	
+        <section class="group-box">
+          <div class="group-box__header">Ultricies group</div>
+          <div class="group-box__body">
+            <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulties mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ultris mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulcies mi</div>
+	      </div>
+	    </div>
+	    <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulties mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ultd fgrdgies mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Uicies drgdrgfmi</div>
+	      </div>
+	    </div>
+          </div>
+        </section>
+
+        <section class="group-box">
+          <div class="group-box__header">Ultres group</div>
+          <div class="group-box__body">
+            <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Uldfgdftric mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulties fdgdmi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Uixcxvxcies mfgxd dfi</div>
+	      </div>
+	    </div>
+	    <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulc xd ies mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ul xdties mxdfxdi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ult xdfies mi</div>
+	      </div>
+	    </div>
+          </div>
+        </section>
+
+
+        <section class="group-box">
+          <div class="group-box__header">Ultres group</div>
+          <div class="group-box__body">
+            <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Uldfgdftric mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulties fdgdmi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Uixcxvxcies mfgxd dfi</div>
+	      </div>
+	    </div>
+	    <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulcxeeeee eeeeeeediesmi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ul xdties mxdfxdi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ult xdfies mi</div>
+	      </div>
+	    </div>
+          </div>
+        </section>
+
+	<section class="group-box">
+          <div class="group-box__header">Ultricies group</div>
+          <div class="group-box__body">
+            <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulties mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ultris mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulcies mi</div>
+	      </div>
+	    </div>
+	    <div class="group-box__column">
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ulties mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Ultd fgrdgies mi</div>
+	      </div>
+	      <div class="group-box__item">
+		<input type="checkbox" class="group-box__checkbox"></input>
+		<div class="group-box__label">Uicies drgdrgfmi</div>
+	      </div>
+	    </div>
+          </div>
+        </section>
+	
+      </section>
+
+      <section class="l-section-container">
+	<p>Output nulla aliquet enim tortor, at auctor urna nunc id cursus metus aliquam eleifend mi in nulla posuere sollicitudin? Mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi!</p>
+        <p>Vitae tortor condimentum lacinia quis vel eros donec ac? Tellus orci, ac auctor augue mauris augue neque, gravida in fermentum et, sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque?</p>
+        <p>Amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa. Ut ornare lectus sit amet est placerat in egestas.</p>
+        <p>In ante metus, dictum at tempor commodo, ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia at. Amet cursus sit amet, dictum sit amet justo donec enim diam, vulputate!</p>
+
+      </section>
+    </main>
+
+
+    <footer class="l-footer-container">
+      fooooooter 
+    </footer>
+
+
+  </body>
+</html>
