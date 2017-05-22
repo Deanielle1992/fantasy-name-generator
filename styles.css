@@ -25,7 +25,7 @@
 .l-main-container {
     background-color: green;
     display: flex;
-    flex-flow: row-reverse wrap;
+    flex-flow: row wrap;
     margin: 0;
     padding: 2px;
 }
@@ -44,7 +44,10 @@
 
 .l-section-container--input {
     flex: 1 1 600px;
+}
 
+.l-section-container--output {
+    flex-flow: column;
 }
 
 .l-footer-container {
@@ -123,5 +126,10 @@
 }
 .group-box__label {
 
+}
+
+.generate-button {
+    height: 50px;
+    width: 200px;
 }
 

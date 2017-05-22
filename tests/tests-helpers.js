@@ -1,3 +1,12 @@
+function unitTest(testName, result, expected) {
+    if (result === expected) {
+	console.log("OK, " + testName + "; " + result + " == " + expected)
+    }
+    else {
+	console.log("FAIL, " + testName + "; " + result + " == " + expected)
+    }
+}
+
 class Possibilities {
     constructor (...values) {
         this._values = values
