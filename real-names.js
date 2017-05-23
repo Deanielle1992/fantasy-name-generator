@@ -9,13 +9,15 @@ const titleSplitterBefore = new Splitter([" ", " the", " of", " for", " in", " a
 //  RepeatedLettersFilter
 //  UniquenessFilter
 //  NameLengthFilter
+//  CapitalizeFilter
 
 const standardFilters = [
     ConsonantsPatternsFilter,
     VowelsPatternsFilter,
     RepeatedLettersFilter,
     UniquenessFilter,
-    NameLengthFilter
+    NameLengthFilter,
+    CapitalizeFilter
 ]
 
 const RealNamesGroups = []

@@ -82,7 +82,7 @@ class ConsonantsPatternsFilter extends Filter {
 	console.log("GROUPS: ", groups)
 	let isOk = true
 	groups.forEach(group => {
-	    if (!this._allowedGroups.includes(group)) {
+	    if (!this._allowedGroups.includes(group.toLowerCase())) {
 		isOk = false
 	    }
 	})
@@ -141,7 +141,7 @@ class VowelsPatternsFilter extends Filter {
 	console.log("GROUPS: ", groups)
 	let isOk = true
 	groups.forEach(group => {
-	    if (!this._allowedGroups.includes(group)) {
+	    if (!this._allowedGroups.includes(group.toLowerCase())) {
 		isOk = false
 	    }
 	})
@@ -249,5 +249,20 @@ class NameLengthFilter extends Filter {
 	else {
 	    return this._veto()
 	}
+    }
+}
+
+
+class CapitalizeFilter extends Filter {
+    constructor(names) {
+	super()
+	this._filterName = "capitalize filter"
+    }
+
+    onFilter(name) {
+	if (super.onFilter(name) == false) {
+	    return this._veto()
+	}
+	return name.charAt(0).toUpperCase() + name.slice(1);
     }
 }
