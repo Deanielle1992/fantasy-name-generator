@@ -15,6 +15,8 @@ function main() {
 
     const listOfSelected = new ListOfSelected(input.pickedNameSetsLabels)
 
+    const listOfGenerated = document.getElementById("list-of-generated")
+    
     input.uiElement.addEventListener("change", function(event) {
 	input.onChanging(event)
 	listOfSelected.update(input.pickedNameSetsLabels)
@@ -43,9 +45,12 @@ function main() {
 
     function generate() {
 	const generator = new Generator(Array.from(input.pickedNameSets))
+	while (listOfGenerated.hasChildNodes()) {
+	    listOfGenerated.removeChild(listOfGenerated.lastChild);
+	}
 	
 	generator.generate(30).forEach(name => {
-	    document.getElementById("list-of-generated").appendChild(generateElement("li", {textNode: name}))
+	    listOfGenerated.appendChild(generateElement("li", {textNode: name}))
 	})
     }
 }
