@@ -26,7 +26,7 @@ function main() {
     input.uiElement.addEventListener("change", function(event) {
 	input.onChanging(event)
 	listOfSelected.update(input.pickedNameSetsLabels)
-	console.log("CHANGE!", input.pickedNameSets)
+	// console.log("CHANGE!", input.pickedNameSets)
     })
 
     generateButton.addEventListener("click", generate)

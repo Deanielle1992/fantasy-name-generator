@@ -6,7 +6,7 @@ class Generator {
 	this._filters = new Set()
 	this._names = []
 	this._nameSets.forEach(nameSet => {
-	    console.log("NAMESET:", nameSet)
+	    // console.log("NAMESET:", nameSet)
 	    nameSet.splitters.forEach(splitter => {
 		this._splitters.add(splitter)
 	    })
@@ -21,9 +21,9 @@ class Generator {
 	this._filters = Array.from(this._filters)
 	this._filters = this._filters.map(filter => new filter(this._names))
 	    
-	console.log(this._splitters)
-	console.log(this._filters)
-	console.log(this._names)
+	// console.log(this._splitters)
+	// console.log(this._filters)
+	// console.log(this._names)
 	
     }
 
