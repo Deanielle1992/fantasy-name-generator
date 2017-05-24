@@ -88,8 +88,6 @@ console.log("INPUT TESTS")
 {
     let result = generateInputGUI()
     
-        // <section class="l-section-container l-section-container--input" id="groups-root">
-	// </section>
 
     unitTest(	"the element is section",
 	result.tagName,	"SECTION"    )

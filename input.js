@@ -1,5 +1,5 @@
 function generateInputGUI() {
-    const element = generateElement("section", {class: "l-section-container l-section-container--input"})
+    const element = generateElement("section", {class: "group-container"})
     return element
 }
 

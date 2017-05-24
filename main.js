@@ -9,9 +9,9 @@ function main() {
 
     const input = new Input(groups)
 
-    const main = document.getElementById("main")
+    const inputSection = document.getElementById("input-section")
 
-    main.appendChild(input.uiElement)
+    inputSection.appendChild(input.uiElement)
 
     const listOfSelected = new ListOfSelected(input.pickedNameSetsLabels)
 

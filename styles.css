@@ -25,7 +25,7 @@
 .l-main-container {
     background-color: green;
     display: flex;
-    flex-flow: row wrap-reverse;
+    flex-flow: row-reverse wrap;
     margin: 0;
     padding: 2px;
 }
@@ -44,6 +44,8 @@
 
 .l-section-container--input {
     flex: 1 1 600px;
+    flex-flow: column;
+
 }
 
 .l-section-container--output {
@@ -80,6 +82,18 @@
 
 }
 
+.group-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    margin: 10px 0;
+    background-color: purple;
+    flex: 1 1 600px;
+}
+
+
 .group-box {
     background-color: white;
     display: flex;
@@ -93,9 +107,9 @@
 .group-box__header {
     background-color: red;
     width: 100%;
-    flex: 1 0 auto%;
+    flex: 1 0 auto;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .group-box__body {
