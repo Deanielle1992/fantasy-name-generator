@@ -137,7 +137,7 @@
 }
 
 .group-box__checkbox {
-
+    flex: 0 0 15px;
 }
 
 .group-box__label {
