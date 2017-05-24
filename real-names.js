@@ -66,10 +66,10 @@ RealNamesGroups.push(
 	nameSets: [
 	    {// index: 0
 		column: "left",
-		label: "Angels",
+		label: "Angels in Judaism and Christianity",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Agrat","Arariel","Ariel","Azazel","Camael","Cassiel","Dumah","Eisheth", "Elioud","Ezekiel","Gabriel","Hadraniel","Haniel","Hashmal","Jehoel","Jerahmeel", "Jophiel","Lailah","Michael","Naamah","Nuriel","Ouza","Pravuil","Raphael", "Raziel","Sachiel","Samael","Sandalphon","Sariel","Seraph","Tzaphqiel","Uriel", "Yahoel","Aamon","Asmodeus","Astaroth","Azazel","Baal","Bagdana","Belial", "Eisheth","Lilin","Lilith","Mastema","Moloch","Naamah","Samael","Shedim", "Tannin","Azrael","Dardail","Gabriel","Hafaza","Harut","Marut","Israfil", "Kiraman","Katibin","Maalik","Munkar","Raphael","Ridwan","Abaddon","Abathar", "Muzania","Adriel","Ahriman","Ambriel","Amesha","Spenta","Arariel","Azazel", "Azrael","Barachiel","Bene","Elohim","Balthazar","Cassiel","Camael","Daniel", "Eremiel","Gabriel","Gadreel","Gagiel","Hadraniel","Haniel","Harut","Hashmal", "Hesediel","Zadkiel","Hamalat","Israfil","Israfel","Raphael","Jegudiel","Jehoel", "Jequn","Jerahmeel","Jophiel","Kasdeja","Kerubiel","Kiraman","Katibin","Kushiel", "Leliel","Lucifer","Maalik","Malik ","Marut ","Metatron","Michael","Mikhail ", "Moroni","Munkar ","Muaqqibat ","Muriel ","Maleeha","Nakir ","Nuriel","Ophan", "Ophanim","Orifiel","Pahaliah ","Paul ","Penemue","Puriel","Peter","Qaphsiel", "Raguel","Azraiel","Raphael","Israfel","Raqib","Raziel","Remiel","Sachiel", "Samael","Sandalphon","Sariel","Selaphiel ","Seraph","Seraphim","Seraphiel","Simiel ", "Shamsiel","Tzaphqiel","Temeluchus","Uriel","Uzziel","Virtues","Zabaniyah","Zachariel", "Zadkiel","Zephon","Zaphkiel","Zophiel"
+		names: ["Abaddon","Adriel","Archangel","Ariel","Azazel","Azrael","Barachiel","Camael","Cassiel","Cherubiel","Cherubim","Daniel","Dumah","Eremiel","Gabriel","Gadreel","Hadraniel","Hahasiah","Haniel","Hashmal","Helel","Hesediel","Imamiah","Jegudiel","Jehoel","Jequn","Jerahmeel","Jophiel","Kamael","Kemuel","Khamael","Kushiel","Leliel","Lucifer","Mebahiah","Metatron","Michael","Muriel","Nanael","Netzach","Nithael","Ofaniel","Ophaniel","Pahaliah","Penemue","Poyel","Puriel","Qaphsiel","Raguel","Raphael","Raziel","Remiel","Rikbiel","Sachiel","Samael","Sandalphon","Sariel","Selaphiel","Seraphiel","Seraphim","Shamsiel","Simiel","Temeluchus","Tzadkiel","Tzaphkiel","Tzaphqiel","Tzaphqiel","Uriel","Uzziel","Vasiariah","Vehuel","Zachariel","Zadkiel","Zaphkiel","Zophiel"
 		       ]
 	    }
 	]
