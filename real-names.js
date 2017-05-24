@@ -107,7 +107,7 @@ RealNamesGroups.push(
 		label: "Polish animals male",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
+		names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","","","","","","","","","","","","","","","","","","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
 		       ]
 	    },
 
@@ -116,7 +116,7 @@ RealNamesGroups.push(
 		label: "Polish animals female",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
+		names: ["Akima","Asaja","Bajka","Czika","Fifi","Fiona","Funia","Gabcia","Harisa","Kiara","Kora","Larisa","Luna","Lula","Maja","Mika","Mila","Misia","Mela","Nala","Nika","Nesti","Nesi","Psota","Punia","Pusia","Roxi","Tonia","Tosia","Zonia","Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
 		       ]
 	    }
 
