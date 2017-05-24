@@ -1,5 +1,12 @@
+/* colors sand    */
+/* grey        #d9cca7; /* grey         */
+/* yellow      #f2e4bb; /* yellow       */
+/* beige       #d9af8b; /* beige        */
+/* brown       #a67d65; /* brown        */
+/* dark-brown  #402a22; /* dark-brown   */
+
 .l-window-container {
-    background-color: black;
+    background-color: #402a22;
     display: flex;
     flex-flow: row;
     justify-content: center;
@@ -8,22 +15,21 @@
 
 .l-body-container {
     max-width: 1000px;
-    background-color: white;
+    background-color: #f2e4bb;
     padding: 0;
     margin: 0;
 }
 
 .l-header-container {
     padding: 10px;
-    background-color: red;
+    background-color: #d9af8b;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    
 }
 
 .l-main-container {
-    background-color: green;
+    background-color: #f2e4bb;
     display: flex;
     flex-flow: row-reverse wrap;
     margin: 0;
@@ -31,6 +37,7 @@
 }
 
 .l-section-container {
+    border: 1px solid #a67d65; /* brown        */
     display: flex;
     flex-flow: row;
     justify-content: flex-start;
@@ -38,30 +45,29 @@
     align-content: flex-start;
     padding: 10px;
     margin: 10px;
-    background-color: grey;
+    background-color: #f2e4bb; /* yellow       */
 }
 
 .l-section-container--input {
-    flex: 1 1 600px;
+    flex: 1 1 650px;
 }
 
 .l-section-container--output {
-    flex: 1 1 300px;
+    flex: 1 1 250px;
 
 }
 
 .l-footer-container {
-    background-color: blue;
+    background-color: #d9af8b;
     padding: 10px;
 }
 
 .logo-img {
     display: block;
-    width: 150px;
-    height: 150px;
-    background-color: white;
+    width: 100px;
+    height: 100px;
+    background-color: #f2e4bb; /* yellow       */
     flex: 0 1 auto;
-
 }
 
 .l-brand-container {
@@ -87,23 +93,21 @@
     align-items: flex-start;
     align-content: flex-start;
     margin: 10px 0;
-    background-color: purple;
-    /* flex: 1 1 600px; */
 }
 
-
 .group-box {
-    background-color: white;
+    /* background-color: white; */
+    border: 1px solid #a67d65; /* brown        */
     display: flex;
     flex-flow: column;
     align-items: center;
-    padding: 2px;
+    padding: 1px;
+    margin: 2px 2px;
     flex: 0 0 300px;
-
 }
 
 .group-box__header {
-    background-color: red;
+    background-color: #a67d65; /* brown        */
     width: 100%;
     flex: 1 0 auto;
     display: flex;
@@ -112,19 +116,18 @@
 
 .group-box__body {
     width: 100%;
-    background-color: green;
+    background-color: #f2e4bb; /* yellow       */
     display: flex;
     flex-flow: row wrap;
     align-items: flex-start;
-    padding: 2px;
+    padding: 0;
 }
 
 .group-box__column {
-    background-color: grey;
+    background-color: #f2e4bb; /* yellow       */
     padding: 2px;
     margin: 2px;
     flex: 1 0 140px;
-
 }
 
 .group-box__item {
@@ -136,6 +139,7 @@
 .group-box__checkbox {
 
 }
+
 .group-box__label {
 
 }
@@ -143,5 +147,5 @@
 .generate-button {
     height: 50px;
     width: 200px;
+    background-color: #d9cca7; /* grey         */
 }
-
