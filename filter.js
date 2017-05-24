@@ -33,7 +33,7 @@ class Filter {
 	if (name != this._oldName) {
 	    this._changed = true
 	}
-	console.log(this._filterName + ": " + " " + this._oldName + " --> " + name )
+	// console.log(this._filterName + ": " + " " + this._oldName + " --> " + name )
 	return name
     }
     
@@ -71,7 +71,7 @@ class ConsonantsPatternsFilter extends Filter {
 	    }
 	})
 	this._allowedGroups = uniqueArray(this._allowedGroups).map(group => group.toLowerCase())
-	console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
+	// console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
     }
 
     onFilter(name) {
@@ -79,7 +79,7 @@ class ConsonantsPatternsFilter extends Filter {
 	    return this._veto()
 	}
 	let groups = name.match(this._regex)
-	console.log("GROUPS: ", groups)
+	// console.log("GROUPS: ", groups)
 	let isOk = true
 	groups.forEach(group => {
 	    if (!this._allowedGroups.includes(group.toLowerCase())) {
@@ -130,7 +130,7 @@ class VowelsPatternsFilter extends Filter {
 	    }
 	})
 	this._allowedGroups = uniqueArray(this._allowedGroups).map(group => group.toLowerCase())
-	console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
+	// console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
     }
 
     onFilter(name) {
@@ -138,7 +138,7 @@ class VowelsPatternsFilter extends Filter {
 	    return this._veto()
 	}
 	let groups = name.match(this._regex)
-	console.log("GROUPS: ", groups)
+	// console.log("GROUPS: ", groups)
 	let isOk = true
 	groups.forEach(group => {
 	    if (!this._allowedGroups.includes(group.toLowerCase())) {
@@ -205,7 +205,9 @@ class UniquenessFilter extends Filter {
     }
 
     onFilter(name) {
-	super.onFilter()
+	if (super.onFilter(name) == false) {
+	    return this._veto()
+	}
 	if (this._toAvoid.includes(name)) {
 	    return this._veto()
 	}
@@ -216,7 +218,7 @@ class UniquenessFilter extends Filter {
 
     afterSuccess() {
 	super.afterSuccess()
-	console.log("AFTER SUCCESS ", this._oldName )
+	// console.log("AFTER SUCCESS ", this._oldName )
 	this._toAvoid.push(this._oldName)
     }
     
@@ -242,7 +244,9 @@ class NameLengthFilter extends Filter {
     }
 
     onFilter(name) {
-	super.onFilter(name)	
+	if (super.onFilter(name) == false) {
+	    return this._veto()
+	}
 	if (name.length >= this._min && name.length <= this._max) {
 	    return name
 	}
