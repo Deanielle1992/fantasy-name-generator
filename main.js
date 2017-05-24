@@ -2,11 +2,17 @@ window.addEventListener('load', main)
 
 function main() {
     const groups = []
-
     RealNamesGroups.forEach(realNamesGroup => {
 	groups.push(constructGroup(realNamesGroup))
     })
+    let howMany = 1
+    const wantACouple = document.getElementById("want-a-couple")
+    const wantMore = document.getElementById("want-more")
+    setHowMany()
+					      
     const generateButton = document.getElementById("generate-button")
+    setGenerateButtonText()
+    
     const input = new Input(groups)
 
     const inputSection = document.getElementById("input-section")
@@ -24,6 +30,8 @@ function main() {
     })
 
     generateButton.addEventListener("click", generate)
+
+    document.getElementById("how-many-names").addEventListener("change", setGenerateButtonText)
     
     function constructNameSet(rawObject) {
 	return new NameSet(rawObject.names, rawObject.label, rawObject.splitters, rawObject.filters)
@@ -49,8 +57,22 @@ function main() {
 	    listOfGenerated.removeChild(listOfGenerated.lastChild);
 	}
 	
-	generator.generate(30).forEach(name => {
+	generator.generate(howMany).forEach(name => {
 	    listOfGenerated.appendChild(generateElement("li", {textNode: name}))
 	})
+    }
+
+    function setHowMany() {
+	if (wantMore.checked) {
+	    howMany = wantMore.value
+	}
+	else {
+	    howMany = wantACouple.value
+	}
+    }
+
+    function setGenerateButtonText() {
+	setHowMany()
+	generateButton.textContent = "Generate (" + howMany  + ")"
     }
 }
