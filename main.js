@@ -18,7 +18,7 @@ function main() {
     const inputSection = document.getElementById("input-section")
 
     // inputSection.appendChild(input.uiElement)
-    inputSection.insertBefore(input.uiElement, generateButton)
+    inputSection.insertBefore(input.uiElement, inputSection.childNodes[6])
     const listOfSelected = new ListOfSelected(input.pickedNameSetsLabels)
 
     const listOfGenerated = document.getElementById("list-of-generated")
