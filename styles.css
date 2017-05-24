@@ -32,24 +32,22 @@
 
 .l-section-container {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
     justify-content: flex-start;
     align-items: flex-start;
     align-content: flex-start;
     padding: 10px;
     margin: 10px;
     background-color: grey;
-    flex: 1 1 300px;
 }
 
 .l-section-container--input {
     flex: 1 1 600px;
-    flex-flow: column;
-
 }
 
 .l-section-container--output {
-    flex-flow: column;
+    flex: 1 1 300px;
+
 }
 
 .l-footer-container {
@@ -90,7 +88,7 @@
     align-content: flex-start;
     margin: 10px 0;
     background-color: purple;
-    flex: 1 1 600px;
+    /* flex: 1 1 600px; */
 }
 
 

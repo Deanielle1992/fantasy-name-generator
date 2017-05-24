@@ -6,13 +6,13 @@ function main() {
     RealNamesGroups.forEach(realNamesGroup => {
 	groups.push(constructGroup(realNamesGroup))
     })
-
+    const generateButton = document.getElementById("generate-button")
     const input = new Input(groups)
 
     const inputSection = document.getElementById("input-section")
 
-    inputSection.appendChild(input.uiElement)
-
+    // inputSection.appendChild(input.uiElement)
+    inputSection.insertBefore(input.uiElement, generateButton)
     const listOfSelected = new ListOfSelected(input.pickedNameSetsLabels)
 
     const listOfGenerated = document.getElementById("list-of-generated")
@@ -23,7 +23,7 @@ function main() {
 	console.log("CHANGE!", input.pickedNameSets)
     })
 
-    document.getElementById("generate-button").addEventListener("click", generate)
+    generateButton.addEventListener("click", generate)
     
     function constructNameSet(rawObject) {
 	return new NameSet(rawObject.names, rawObject.label, rawObject.splitters, rawObject.filters)
