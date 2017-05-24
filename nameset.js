@@ -1,7 +1,7 @@
 function generateNameSetGUI(nameSetLabel) {
     const element = generateElement("div", {class: "group-box__item"})
     element.appendChild(generateElement("input", {type: "checkbox", class: "group-box__checkbox"}))
-    element.appendChild(generateElement("div", {textNode: nameSetLabel,class: "group-box__label"}))    
+    element.appendChild(generateElement("div", {textNode: nameSetLabel,class: "group-box__label"}))
     return element
 }
 
