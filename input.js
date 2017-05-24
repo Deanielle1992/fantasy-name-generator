@@ -28,8 +28,15 @@ class Input {
     }
     
     addGroupElements() {
-	this._groups.forEach( group => {
+	let groupIndex
+	let nameSetIndex
+	this._groups.forEach( (group, groupIndex) => {
 	    this.uiElement.appendChild(group.uiElement)
+	    group.nameSets.forEach( (nameSet, nameSetIndex) => {
+		let id = "nameset-" + groupIndex.toString() + "-"  + nameSetIndex.toString()
+		nameSet.uiElement.childNodes[0].id = id
+		nameSet.uiElement.childNodes[1].setAttribute("for", id)
+	    })
 	})
     }
 

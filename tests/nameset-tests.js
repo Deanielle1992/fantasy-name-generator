@@ -134,8 +134,8 @@ console.log("NAMESET TESTS")
 	console.log("Failed - " + testName)
     }
 
-    testName = "the second child is div"
-    if ( result.childNodes[1].tagName == "DIV" ) {
+    testName = "the second child is label"
+    if ( result.childNodes[1].tagName == "LABEL" ) {
 	console.log("OK - " + testName)
     }
     else {
