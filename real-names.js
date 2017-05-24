@@ -71,6 +71,14 @@ RealNamesGroups.push(
 		filters: standardFilters,
 		names: ["Abaddon","Adriel","Archangel","Ariel","Azazel","Azrael","Barachiel","Camael","Cassiel","Cherubiel","Cherubim","Daniel","Dumah","Eremiel","Gabriel","Gadreel","Hadraniel","Hahasiah","Haniel","Hashmal","Helel","Hesediel","Imamiah","Jegudiel","Jehoel","Jequn","Jerahmeel","Jophiel","Kamael","Kemuel","Khamael","Kushiel","Leliel","Lucifer","Mebahiah","Metatron","Michael","Muriel","Nanael","Netzach","Nithael","Ofaniel","Ophaniel","Pahaliah","Penemue","Poyel","Puriel","Qaphsiel","Raguel","Raphael","Raziel","Remiel","Rikbiel","Sachiel","Samael","Sandalphon","Sariel","Selaphiel","Seraphiel","Seraphim","Shamsiel","Simiel","Temeluchus","Tzadkiel","Tzaphkiel","Tzaphqiel","Tzaphqiel","Uriel","Uzziel","Vasiariah","Vehuel","Zachariel","Zadkiel","Zaphkiel","Zophiel"
 		       ]
+	    },
+	    {// index: 1
+		column: "right",
+		label: "Angels in Islam",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Atid","Azazil","Azrael","Azrail","Dardail","Hafaza","Hamalat","Herut","Israfil","Jabril","Jibrail","Jibril","Jundullah","Malik","Marut","Mikail","Muaqqibat","Munkar","Nakir","Raqibun","Raqib","Ridwan","Zabaniah"
+		       ]
 	    }
 	]
     },
@@ -107,7 +115,7 @@ RealNamesGroups.push(
 		label: "Polish animals male",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","","","","","","","","","","","","","","","","","","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
+		names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
 		       ]
 	    },
 
