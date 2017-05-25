@@ -5,6 +5,7 @@
 /* brown       #a67d65; /* brown        */
 /* dark-brown  #402a22; /* dark-brown   */
 
+
 .l-window-container {
     background-color: #402a22;
     display: flex;
@@ -80,10 +81,11 @@
 .brand-title {
     margin: 0;
     text-align: center;
+    font-family: sans-serif;
 }
 
 .brand-description {
-
+    font-family: 'SeshatRegular', serif;
 }
 
 .group-container {
@@ -103,15 +105,17 @@
     align-items: center;
     padding: 1px;
     margin: 2px 2px;
-    flex: 0 0 300px;
+    flex: 0 1 300px;
+    font-family: 'SeshatRegular', serif;
 }
 
 .group-box__header {
     background-color: #a67d65; /* brown        */
     width: 100%;
-    flex: 1 0 auto;
+    flex: 1 1 auto;
     display: flex;
     justify-content: center;
+    font-family: sans-serif;
 }
 
 .group-box__body {
@@ -148,4 +152,5 @@
     height: 50px;
     width: 200px;
     background-color: #d9cca7; /* grey         */
+    font-family: 'SeshatRegular', serif;
 }
