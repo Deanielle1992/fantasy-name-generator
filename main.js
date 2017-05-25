@@ -8,8 +8,9 @@ function main() {
     let howMany = 1
     const wantACouple = document.getElementById("want-a-couple")
     const wantMore = document.getElementById("want-more")
+    const wantToFreeze = document.getElementById("want-to-freeze")
     setHowMany()
-					      
+    
     const generateButton = document.getElementById("generate-button")
     setGenerateButtonText()
     
@@ -65,6 +66,9 @@ function main() {
     function setHowMany() {
 	if (wantMore.checked) {
 	    howMany = wantMore.value
+	}
+	else if (wantToFreeze.checked) {
+	    howMany = wantToFreeze.value
 	}
 	else {
 	    howMany = wantACouple.value
