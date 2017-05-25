@@ -24,7 +24,7 @@ const RealNamesGroups = []
 
 RealNamesGroups.push(
     {// index: 0
-	label: "The First Group",
+	label: "European names",
 	nameSets: [
 	    {// index: 0
 		column: "left",
@@ -57,12 +57,28 @@ RealNamesGroups.push(
 		filters: standardFilters,
 		names: ["Bądzsława","Biedziesława","Biecsława","Biecława","Biezdziadka","Bogdała","Bogdana","Bogna", "Boguchwała","Bogufała","Bogudać","Bogudarz","Bogodarzf","Bogumiła","Bogmiła","Bogusława", "Boguwłość","Bogowłość","Boguwola","Bohuwola","Bolemira","Bolesława","Bosława","Bożeciecha", "Bożena","Bratumiła","Bratomiła","Bratmiła","Bronisława","Budzisława","Chwalimira","Chwalisława", "Ciechosława","Ciecirada","Ciesława","Cieszysława","Cirzpisława","Czcibora","Cibora","Czasława", "Czesława","Czębira","Częstobrona","Częstowojna","Dadzboga","Dalebora","Dalewuja","Damroka", "Dąbrówka","Dobiegniewa","Dobiesława","Dobosława","Dobrawa","Dobrogniewa","Dobromiła","Dobromira", "Dobroniega","Dobrosława","Dobrochna","Dobrosułka","Dobrowieść","Dobrowoja","Dobrożyźń","Domaczaja", "Domasława","Drogomira","Drogosława","Dziadumiła","Dziesława","Dzisława","Dzirżysława","Dziersława", "Dzirsława","Falisława","Gniewosądka","Godzimira","Godzisława","Gosława","Gościrada","Gościsława", "Grodzisława","Grzymisława","Grzymsława","Hubysława","Imisława","Izbygniewa","Janczysława","Jarogniewa", "Jaromira","Jarosława","Jerosława","Kazimiera","Krzesisława","Krzesława","Lechosława","Lesława", "Lubomira","Ludomiła","Ludmiła","Ludzimiła","Ludźmiła","Ludomira","Lutosława","Małomira", "Mieczysława","Milena","Miłosława","Miłochna","Mirogniewa","Mironiega","Mirosława","Modliboga", "Mojmira","Morzysława","Mszczuja","Mścigniewa","Mścisława","Myślibora","Naczęsława","Nadzieja", "Nasława","Nawoja","Nawojka","Niedomira","Niedamirz","Niegosława","Nieluba","Niemiła", "Nieradka","Niesiebądka","Niesiebudka","Niestanka","Pakosława","Pęcisława","Pęcsława","Pęcława", "Pęsława","Pękosława","Pężyrka","Przeborka","Przedsława","Przecsława","Przecława","Przesława", "Przemysława","Przezprawa","Przybycześć","Przybysława","Racisława","Racsława","Racława","Ratsława", "Recsława","Recława","Retsława","Rasława","Radomiła","Radosława","Radsława","Redsława", "Radochna","Radzisława","Rosława","Rościsława","Rzepicha","Samboja","Sędzisława","Siabora", "Szabora","Szebora","Sieciesława","Siecsława","Siecława","Siesława","Sięgniewa","Sirosława", "Sjęgniewa","Skarbimira","Sława","Sławobora","Sławomira","Smysława","Sobiesława","Stanisława", "Stojsława","Stoisława","Stronisława","Strzeżysława","Strzesława","Suligniewa","Sulisława","Ścibora", "Świebora","Świętomira","Świętosława","Święcsława","Święsława","Świętożyźń","Tolisława","Tomiła", "Tomira","Tomisława","Tosława","Trzebiesława","Trzebosława","Tworzysława","Ubysława","Uniesława", "Unisława","Wacława","Wielisława","Wieńczysława","Wiesława","Więcesława","Więcsława","Więcława", "Wirzchosława","Wisława","Witosława","Władysława","Włodzimira","Włościsława","Wojciecha","Wociecha", "Wojsława","Wojesława","Wolisława","Wrocisława","Wrocsława","Wszebora","Wszemiła","Wyszeniega", "Wyszesława","Wysława","Zbigniewa","Zbygniewa","Zbysława","Zdzisława","Zdziesława","Zwnisława", "Żelisława","Żyrborka","Żyrosława","Żywia"
 		       ]
+	    },
+	    {// index: 4
+		column: "left",
+		label: "Old Irish male",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Maon","Miach","Séighín","Éimhín","Fachtna","Feidhlim","Ailbhe","Beag","Bearach","Cathán","Ceallach","Eirnín","Flann","Gormán","Naoise","Coinneach","Abbán","Aibhne","Ailill","Aimhirghin","Ainbheartach","Ainníleas","Anamcha","Aodh","Aodhán","Aonghus","Bairrfhionn","Baoth","Bardán","Beagán","Breacán","Breasal","Brion","Brocc","Brógán","Buadhach","Cairbre","Cairell","Calbhach","Caoimhín","Cass","Cassair","Cassán","Cathal","Cathaír","Cearbhall","Cian","Ciarán","Cillian","Cináed","Coinneach","Colmán","Comhghall","Conall","Conchobhar","Conlaodh","Conn","Conán","Cormac","Curnán","Cuán","Cúmhaí","Daigh","Daighre","Daimhín","Dallán","Deaglán","Deasmumhnach","Diarmaid","Domhnall","Donnchadh","Dubhaltach","Dubhgall","Dubhghlas","Dáire","Ealadha","Earnán","Eoghan","Faolán","Fearchar","Feardorcha","Fearghal","Fearghus","Fechín","Fiachra","Fial","Finnseach","Finnén","Fionn","Fionnbharr","Fionntán","Garbhán","Gilleagán","Giolla","Chríst","Glaisne","Gobán","Gormghiolla","Iarfhlaith","Iarlugh","Iobhar","Iomchadh","Irial","Labhraidh","Labhrás","Lachtna","Lachtnán","Laisrén","Laoidheach","Laoire","Lasair","Leannán","Lochlann","Lomán","Lonán","Lorcán","Lughaidh","Mac","Nisse","Mac","Táil","Mael","Íosa","Maeleachlainn","Mainchín","Maine","Maolán","Marcán","Meallán","Mel","Mochta","Molaisse","Morann","Muircheartach","Muireadhach","Murchadh","Murchú","Naithí","Naomhán","Neasán","Niall","Niallán","Nuadha","Odhrán","Oilithir","Oilleóg","Oillill","Oillín","Oisín","Olcán","Onchú","Orthanach","Osgar","Osán","Robhartach","Ross","Ruaidhrí","Ruarc","Ríoghán","Ríordán","Rónán","Rúadhán","Samhradhán","Scannal","Scannlán","Scoithín","Scolaí","Scáthach","Seachlann","Seanchán","Seanán","Siollán","Sléibhín","Somhairle","Suibhne","Sárán","Sé","Séadhna","Síoda","Tadhg","Taichleach","Tanaí","Tassach","Teimhnín","Tighearnach","Tighearnán","Tiobraide","Toirdhealbhach","Tomaltach","Torcán","Torna","Treasach","Tuama","Tuathal","Tíreachán","Tóla","Tómmán","Uaithne","Uallachán","Uallgarg","Ultán","Urard","Ádhamhnán","Áinle","Ámhra","Ánrothán","Éamonn","Éanna","Ógán","Ólchobhar"
+		       ]
+	    },
+	    {// index: 5
+		column: "right",
+		label: "Old Irish female",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Aillean","Ainnir","Aithche","Ana","Aodhamair","Aodnait","Aoibheann","Aoibhegréine","Aoife","Banbha","Blinne","Bláthnaid","Bláthín","Bríghid","Brónach","Báine","Bébhinn","Caoilfhionn","Caoimhe","Ceara","Ciar","Clíodhna","Dairinn","Damhnait","Dearbhail","Deirbhile","Deirdre","Dunfhlaith","Dáirine","Dáirinn","Eadan","Easnadh","Echna","Eibhear","Eithne","Fainche","Feidhelm","Feme","Fianait","Fionnait","Fionnghuala","Fionúir","Féthnaid","Geiléis","Gobnait","Gormlaith","Grian","Gráinne","Laoise","Lasairfhiona","Liamhain","Life","Luiseach","Líadan","Líobhan","Marga","Meadhbh","Meallá","Moinnine","Moncha","Muadhnait","Muireann","Muirgheal","Muirne","Muirín","Móirne","Mór","Naomh","Neacht","Neamhain","Neasa","Niamh","Nuala","Nárbhflaith","Osnait","Rathnait","Ríofach","Ríona","Róinseach","Róisín","Rónnad","Rós","Rúadhnait","Sadhbh","Saorla","Saraid","Scoithniamh","Scoth","Scothnait","Searc","Sláine","Sorcha","Suaibhseach","Suanach","Sárnait","Séanait","Síomha","Taillte","Teafa","Teamhair","Treasa","Tuamnait","Tuathla","Tuileach","Tuilelaith","Téide","Uaine","Uaine","Uainionn","Uallach","Uasal","Áine","Áinfean","Álmhath","Éibhleann","Éile","Éirne","Émer","Étaín","Íde","Íonait","Órlaith","Órnait","Úna","Maon","Miach","Séighín","Éimhín","Fachtna","Feidhlim","Ailbhe","Beag","Bearach","Cathán","Ceallach","Eirnín","Flann","Gormán","Naoise","Coinneach"
+		       ]
 	    }
 	]
     },
 
     {// index: 1
-	label: "The Second Group",
+	label: "Angels and Demons",
 	nameSets: [
 	    {// index: 0
 		column: "left",
@@ -84,7 +100,7 @@ RealNamesGroups.push(
     },
 
     {// index: 2
-	label: "The Third Group",
+	label: "Testing for rotfl",
 	nameSets: [
 	    {// index: 0
 		column: "left",
@@ -102,14 +118,7 @@ RealNamesGroups.push(
 		filters: standardFilters,
 		names: ["Ala", "Ola", "Ela", "Ula", "Lena", "Pola", "Liliana", "Zuzia", "Hania", "Zosia"
 		       ]
-	    }
-
-	]
-    },
-
-    {// index: 3
-	label: "The Forth Group",
-	nameSets: [
+	    },
 	    {// index: 0
 		column: "left",
 		label: "Polish animals male",
@@ -118,7 +127,7 @@ RealNamesGroups.push(
 		names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
 		       ]
 	    },
-
+	    
 	    {// index: 1
 		column: "right",
 		label: "Polish animals female",
@@ -127,8 +136,10 @@ RealNamesGroups.push(
 		names: ["Akima","Asaja","Bajka","Czika","Fifi","Fiona","Funia","Gabcia","Harisa","Kiara","Kora","Larisa","Luna","Lula","Maja","Mika","Mila","Misia","Mela","Nala","Nika","Nesti","Nesi","Psota","Punia","Pusia","Roxi","Tonia","Tosia","Zonia","Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
 		       ]
 	    }
-
+	    
 	]
-    },
+    }
+
+
     
 )
