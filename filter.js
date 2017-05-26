@@ -69,6 +69,9 @@ class ConsonantsPatternsFilter extends Filter {
 	    if (groups) {
 		this._allowedGroups = this._allowedGroups.concat(groups)
 	    }
+	    else {
+		this._allowedGroups = this._allowedGroups.concat([""])
+	    }
 	})
 	this._allowedGroups = uniqueArray(this._allowedGroups).map(group => group.toLowerCase())
 	// console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
@@ -79,7 +82,10 @@ class ConsonantsPatternsFilter extends Filter {
 	    return this._veto()
 	}
 	let groups = name.match(this._regex)
-	// console.log("GROUPS: ", groups)
+	if (!groups) {
+	    groups = [""]
+	}
+	console.log("GROUPS: ", groups, "name:", name)
 	let isOk = true
 	groups.forEach(group => {
 	    if (!this._allowedGroups.includes(group.toLowerCase())) {
