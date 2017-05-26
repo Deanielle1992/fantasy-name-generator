@@ -142,8 +142,8 @@ RealNamesGroups.push(
 		filters: standardFilters,
 		names: ["Akima","Asaja","Bajka","Czika","Fifi","Fiona","Funia","Gabcia","Harisa","Kiara","Kora","Larisa","Luna","Lula","Maja","Mika","Mila","Misia","Mela","Nala","Nika","Nesti","Nesi","Psota","Punia","Pusia","Roxi","Tonia","Tosia","Zonia","Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
 		       ]
-	    }
-	    	    {
+	    },
+	    {
 		column: "left",
 		label: "Old Polish male",
 		splitters: [splitterAfter, splitterBefore],
