@@ -5,11 +5,12 @@ function main() {
     RealNamesGroups.forEach(realNamesGroup => {
 	groups.push(constructGroup(realNamesGroup))
     })
-    let howMany = 1
-    const wantACouple = document.getElementById("want-a-couple")
-    const wantMore = document.getElementById("want-more")
-    const wantToFreeze = document.getElementById("want-to-freeze")
-    setHowMany()
+    const radioGroup = document.getElementById("how-many-names")
+    radioGroup.getValue = function() {
+	return this.querySelector("input[name='how-many']:checked").value
+	
+    }
+    radioGroup.addEventListener("change", setGenerateButtonText)
     
     const generateButton = document.getElementById("generate-button")
     setGenerateButtonText()
@@ -32,7 +33,6 @@ function main() {
 
     generateButton.addEventListener("click", generate)
 
-    document.getElementById("how-many-names").addEventListener("change", setGenerateButtonText)
     
     function constructNameSet(rawObject) {
 	return new NameSet(rawObject.names, rawObject.label, rawObject.splitters, rawObject.filters)
@@ -58,25 +58,12 @@ function main() {
 	    listOfGenerated.removeChild(listOfGenerated.lastChild);
 	}
 	
-	generator.generate(howMany).forEach(name => {
+	generator.generate(radioGroup.getValue()).forEach(name => {
 	    listOfGenerated.appendChild(generateElement("li", {textNode: name}))
 	})
     }
 
-    function setHowMany() {
-	if (wantMore.checked) {
-	    howMany = wantMore.value
-	}
-	else if (wantToFreeze.checked) {
-	    howMany = wantToFreeze.value
-	}
-	else {
-	    howMany = wantACouple.value
-	}
-    }
-
     function setGenerateButtonText() {
-	setHowMany()
-	generateButton.textContent = "Generate (" + howMany  + ")"
+	generateButton.textContent = "Generate (" + radioGroup.getValue() + ")"
     }
 }
