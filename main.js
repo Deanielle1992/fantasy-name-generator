@@ -21,13 +21,11 @@ function main() {
 
     // inputSection.appendChild(input.uiElement)
     inputSection.insertBefore(input.uiElement, inputSection.childNodes[6])
-    const listOfSelected = new ListOfSelected(input.pickedNameSetsLabels)
 
     const listOfGenerated = document.getElementById("list-of-generated")
     
     input.uiElement.addEventListener("change", function(event) {
 	input.onChanging(event)
-	listOfSelected.update(input.pickedNameSetsLabels)
 	// console.log("CHANGE!", input.pickedNameSets)
     })
 
