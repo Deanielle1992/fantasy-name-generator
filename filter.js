@@ -85,7 +85,7 @@ class ConsonantsPatternsFilter extends Filter {
 	if (!groups) {
 	    groups = [""]
 	}
-	console.log("GROUPS: ", groups, "name:", name)
+	// console.log("GROUPS: ", groups, "name:", name)
 	let isOk = true
 	groups.forEach(group => {
 	    if (!this._allowedGroups.includes(group.toLowerCase())) {
