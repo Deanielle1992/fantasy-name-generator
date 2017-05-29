@@ -167,6 +167,7 @@ RealNamesGroups.push(
 	label: "Other traditional names",
 	nameSets: [
 	    {
+		// source: https://www.nordicnames.de/wiki/Category:Finnish_Origin
 		column: "left",
 		label: "Finnish male",
 		splitters: [splitterAfter, splitterBefore],
@@ -176,6 +177,7 @@ RealNamesGroups.push(
 	    },
 
 	    {
+		// source: https://www.nordicnames.de/wiki/Category:Finnish_Origin
 		column: "right",
 		label: "Finnish female",
 		splitters: [splitterAfter, splitterBefore],
