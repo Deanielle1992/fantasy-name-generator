@@ -120,7 +120,7 @@ class Generator {
 	    
 	} while (generated.length < amount && allTriesCountDown > 0)
 
-	return generated.sort((a,b) => {if (a < b) return -1; else return 1}) 
+	return generated
     }
 
 
