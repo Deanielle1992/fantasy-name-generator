@@ -13,6 +13,10 @@ function sortByLengthDown(array) {
     return array.slice().sort((a, b) => b.length - a.length )
 }
 
+function sortByLengthUp(array) {
+    return array.slice().sort((a, b) => a.length - b.length )
+}
+
 function removeFromArray(array, element) {
     const index = array.indexOf(element);
     
