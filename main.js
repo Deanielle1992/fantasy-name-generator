@@ -16,14 +16,50 @@ function main() {
     const alphabeticallyButton = document.getElementById("alphabetically-button")
     const lengthButton = document.getElementById("length-button")
 
+    let clickedSortButton = unsortButton
+    
     unsortButton.addEventListener("click", function() {
 	displayNames(listOfGenerated.names)
+	clickedSortButton = this
     } )
     alphabeticallyButton.addEventListener("click", function() {
-	displayNames(listOfGenerated.names.slice(0).sort((a,b) => {if (a < b) return -1; else return 1}) )
+	if (clickedSortButton != this) {
+	    displayNames(listOfGenerated.names.slice(0).sort((a,b) => {if (a < b) return -1; else return 1}) )
+	    clickedSortButton = this
+	    this.sortDirection = "down"
+	}
+	else {
+	    if (this.sortDirection == "down") {
+		this.sortDirection = "up"
+		displayNames(listOfGenerated.names.slice(0).sort((a,b) => {if (a > b) return -1; else return 1}) )
+	    }
+	    else {
+		this.sortDirection = "down"
+		displayNames(listOfGenerated.names.slice(0).sort((a,b) => {if (a < b) return -1; else return 1}) )
+
+	    }
+	}
+	
     } )
     lengthButton.addEventListener("click", function () {
 	displayNames(sortByLengthUp(listOfGenerated.names))
+
+	if (clickedSortButton != this) {
+	    displayNames(sortByLengthUp(listOfGenerated.names))
+	    clickedSortButton = this
+	    this.sortDirection = "down"
+	}
+	else {
+	    if (this.sortDirection == "down") {
+		this.sortDirection = "up"
+		displayNames(sortByLengthDown(listOfGenerated.names))
+	    }
+	    else {
+		this.sortDirection = "down"
+		displayNames(sortByLengthUp(listOfGenerated.names))
+	    }
+	}
+	
     })
     
     const generateButton = document.getElementById("generate-button")
