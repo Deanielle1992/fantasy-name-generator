@@ -185,6 +185,26 @@ RealNamesGroups.push(
 		names: ["Aallotar","Aamu","Aino","Airi","Anelma","Ansa","Aulikki","Helmi","Hilja","Hilkka","Hillervo","Hymy","Ihanelma","Ilo","Ilpotar","Ilta","Impi","Inari","Jippu","Kaarna","Kaiho","Kaino","Kaisla","Kaneli","Kanerva","Kastanja","Kaste","Kastehelmi","Kerttu","Kielo","Kirsimarja","Kukka","Kuu","Kuura","Kylli","Lahja","Laine","Lauha","Lempi","Louna","Lumi","Lumianna","Lumikukka","Lumisirkku","Lyly","Maire","Marja","Meimi","Merituuli","Merja","Mervi","Mielikki","Mielipäivä","Minttu","Muisto","Nuppu","Oiva","Oma","Onerva","Orvokki","Paju","Paula","Pihla","Pilvi","Pinja","Pulmu","Päivä","Pälvi","Raili","Raita","Rauha","Runo","Ruska","Sade","Saima","Sanelma","Satu","Sini","Sirkka","Sirkku","Siro","Sirpa","Sisko","Siviä","Soile","Soilikki","Sointu","Soiva","Solja","Sorea","Sulo","Suoma","Suvi","Suvituuli","Säde","Taika","Taimi","Tauno","Terhi","Terttu","Tiuku","Toini","Tuija","Tuike","Tuire","Tuisku","Tuli","Tuomi","Tuuli","Tyyni","Tähti","Ulpukka","Unelma","Usva","Utu","Valma","Vanamo","Varma","Vaula","Vellamo","Vieno","Vilja","Virpi","Virva","Vuokko",
 		       ]
 	    },
+
+	    {
+		// source: https://www.behindthename.com/names/gender/masculine/usage/japanese
+		column: "left",
+		label: "Japanese male",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Akio","Akira","Aoi","Arata","Ayumu","Daichi","Daiki","Daisuke","Goro","Gorou","Hachiro","Hachirou","Haru","Haruka","Haruki","Haruto","Hayate","Hayato","Hibiki","Hideaki","Hideki","Hideyoshi","Hikaru","Hinata","Hiraku","Hiroki","Hiroshi","Hiroto","Ichiro","Ichirou","Isamu","Itsuki","Jiro","Jirou","Juro","Jurou","Kaede","Kaito","Kaoru","Katashi","Katsu","Katsuo","Katsuro","Katsurou","Kazuki","Kazuo","Ken","Ken'ichi","Kenji","Kenshin","Kenta","Kichiro","Kichirou","Kiyoshi","Kohaku","Kouki","Kouta","Kuro","Kurou","Kyo","Kyou","Makoto","Masaru","Michi","Minato","Minoru","Naoki","Naomi","Noboru","Nobu","Noburu","Nobuyuki","Nori","Osamu","Ren","Riku","Rikuto","Rin","Rokuro","Rokurou","Ryo","Ryoichi","Ryota","Ryou","Ryouichi","Ryouta","Ryuu","Ryuunosuke","Saburo","Saburou","Shichiro","Shichirou","Shin","Shinobu","Shiori","Shiro","Shirou","Sho","Shota","Shou","Shouhei","Shouta","Shun","Sora","Sota","Souma","Souta","Susumu","Taichi","Taiki","Takahiro","Takara","Takashi","Takehiko","Takeshi","Takuma","Takumi","Takuya","Taro","Tarou","Tsubasa","Yamato","Yasu","Yori","Yoshi","Yoshiro","Yoshirou","Youta","Yuki","Yuu","Yuudai","Yuuki","Yuuma","Yuuta","Yuuto",
+		       ]
+	    },
+
+	    {
+		// source: https://www.behindthename.com/names/gender/feminine/usage/japanese 
+		column: "right",
+		label: "Japanese female",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Ai","Aiko","Aimi","Aina","Airi","Akane","Akemi","Aki","Akiko","Akira","Ami","Aoi","Asuka","Atsuko","Aya","Ayaka","Ayako","Ayame","Ayane","Ayano","Chihiro","Chika","Chikako","Chinatsu","Chiyo","Chiyoko","Cho","Chou","Chouko","Emi","Etsuko","Hana","Hanae","Hanako","Haru","Haruka","Haruko","Haruna","Hibiki","Hikari","Hikaru","Hina","Hinata","Hiroko","Hitomi","Honoka","Hoshi","Hoshiko","Hotaru","Izumi","Junko","Kaede","Kanon","Kaori","Kaoru","Kasumi","Kazue","Kazuko","Keiko","Kiku","Kimiko","Kiyoko","Kohaku","Koharu","Kokoro","Kotone","Kumiko","Kyo","Kyou","Mai","Makoto","Mami","Manami","Mao","Mariko","Masami","Masuyo","Mayu","Megumi","Mei","Michi","Michiko","Midori","Miho","Mika","Miki","Miku","Minako","Minato","Minoru","Mio","Misaki","Mitsuko","Miu","Miyako","Miyu","Mizuki","Moe","Momoka","Momoko","Moriko","Nana","Nanako","Nanami","Naoko","Naomi","Natsuki","Natsuko","Natsumi","Noa","Noriko","Ran","Rei","Ren","Riko","Rin","Rina","Rio","Sachiko","Saki","Sakura","Sakurako","Satomi","Sayaka","Sayuri","Setsuko","Shinju","Shinobu","Shiori","Shizuka","Shun","Sora","Sumiko","Suzu","Suzume","Takako","Takara","Tamiko","Tomiko","Tomoko","Tomomi","Tsubaki","Tsubame","Tsubasa","Tsukiko","Ume","Umeko","Wakana","Yasu","Yoko","Yoshi","Yoshiko","Youko","Yua","Yui","Yuina","Yuki","Yukiko","Yuko","Yumi","Yumiko","Yuri","Yuu","Yuuka","Yuuki","Yuuko","Yuuna","Yuzuki",
+		       ]
+	    },
 	]
     },
 
