@@ -61,6 +61,7 @@
 .l-footer-container {
     background-color: #d9af8b;
     padding: 10px;
+    text-align: right;
 }
 
 .logo-img {
@@ -89,7 +90,7 @@
 
 .brand-description {
     font-family: 'SeshatRegular', serif;
-    border: 1px solid #a67d65; /* brown        */
+    /* border: 1px solid #a67d65; /\* brown        *\/ */
 }
 
 .group-container {
@@ -183,7 +184,7 @@
 
 .subsection-header {
     /* border: 1px solid #a67d65; /\* brown        *\/ */
-    margin: 0;
+    margin: 0 0 4px 0;
     font-family: sans-serif;
     font-size: 15px;
 }
