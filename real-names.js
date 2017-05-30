@@ -235,42 +235,66 @@ RealNamesGroups.push(
     },
 
     {
-	label: "Testing for rotfl",
+	label: "Geographical names",
 	nameSets: [
 	    {
-		column: "left",
-		label: "Polish children male",
-		splitters: [splitterAfter, splitterBefore],
-		filters: standardFilters,
-		names: ["Antek", "Kubuś", "Jasio", "Kacperek", "Wojtuś", "Adaś", "Staś", "Alan", "Franek", "Marcelek"
-		       ]
-	    },
-
-	    {
 		column: "right",
-		label: "Polish children female",
+		label: "Countries",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Ala", "Ola", "Ela", "Ula", "Lena", "Pola", "Liliana", "Zuzia", "Hania", "Zosia"
+		names: ["Afghanistan","Albania","Algeria","Samoa","Andorra","Angola","Anguilla","Antarctica","Antigua","Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia","Herzegovina","Botswana","Brazil","Brunei","Darussalam","Bulgaria","Burkina","Burundi","Cambodia","Cameroon","Canada","Chad","Chile","China","Cocos","Colombia","Comoros","Congo","Croatia","Cuba","Cyprus","Denmark","Djibouti","Dominica","Ecuador","Egypt","Salvador","Eritrea","Estonia","Ethiopia","Falkland","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Britain","Greece","Greenland","Grenada","Guadeloupe","Guam","Guatemala","Guinea","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea","Kosovo","Kuwait","Kyrgyzstan","Lao","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Martinique","Mauritania","Mauritius","Mayotte","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","Caledonia","Zealand","Nicaragua","Niger","Nigeria","Niue","Norway","Oman","Pakistan","Palau","Panama","Papua","Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Samoa","Arabia","Senegal","Serbia","Seychelles","Singapore","Slovakia","Slovenia","Somalia","Spain","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Tibet","Togo","Tokelau","Tonga","Trinidad","Tunisia","Turkey","Turkmenistan","Turks","Tuvalu","Uganda","Ukraine","Uruguay","Uzbekistan","Vanuatu","Vatican","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe",
 		       ]
 	    },
 	    {
 		column: "left",
-		label: "Polish animals male",
+		label: "Middle-earth regions",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
+		names: ["Aman","Andrast","Andustar","Anfalas","Anórien","Araman","Arnor","Angmar","Arandor","Avathar","Beleriand","Belfalas","Bree","Calenardhon","Cuiviénen","Dagorlad","Dimbar","Dor Daedeloth","Dor-en-Ernil","Dor-lómin","Dorthonion","Dorwinion","Drúwaith Iaur","Dunland","Dûn","Eldamar","Emerië","Enedwaith","Eriador","Falas","Folde","Forlindon","Forodwaith","Forostar","Gondor","Gorgoroth","Harad","Harlindon","Harondor","Hildórien","Hithlum","Hyarrostar","Ithilien","Khand","Ladros","Lamedon","Lammoth","Lebennin","Lindon","Lithlad","Lossarnach","Lothlann","Minhiriath","Mittalmar","Naith","Mordor","Alalminórë","Araman","Ard-galen","Arvernie","Avathar","Nísimaldar","Núrn","Orrostar","Ossiriand","Parth Galen","Rhovanion","Rhûn","Rohan","Tol Eressëa","Tolfalas","Udûn","Umbar","Valinor",
 		       ]
 	    },
 	    
-	    {
-		column: "right",
-		label: "Polish animals female",
-		splitters: [splitterAfter, splitterBefore],
-		filters: standardFilters,
-		names: ["Akima","Asaja","Bajka","Czika","Fifi","Fiona","Funia","Gabcia","Harisa","Kiara","Kora","Larisa","Luna","Lula","Maja","Mika","Mila","Misia","Mela","Nala","Nika","Nesti","Nesi","Psota","Punia","Pusia","Roxi","Tonia","Tosia","Zonia","Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
-		       ]
-	    },
+	]
+    },
+
+    
+    {
+	label: "Experimantal",
+	nameSets: [
+	    // {
+	    // 	column: "left",
+	    // 	label: "Polish children male",
+	    // 	splitters: [splitterAfter, splitterBefore],
+	    // 	filters: standardFilters,
+	    // 	names: ["Antek", "Kubuś", "Jasio", "Kacperek", "Wojtuś", "Adaś", "Staś", "Alan", "Franek", "Marcelek"
+	    // 	       ]
+	    // },
+
+	    // {
+	    // 	column: "right",
+	    // 	label: "Polish children female",
+	    // 	splitters: [splitterAfter, splitterBefore],
+	    // 	filters: standardFilters,
+	    // 	names: ["Ala", "Ola", "Ela", "Ula", "Lena", "Pola", "Liliana", "Zuzia", "Hania", "Zosia"
+	    // 	       ]
+	    // },
+	    // {
+	    // 	column: "left",
+	    // 	label: "Polish animals male",
+	    // 	splitters: [splitterAfter, splitterBefore],
+	    // 	filters: standardFilters,
+	    // 	names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
+	    // 	       ]
+	    // },
+	    
+	    // {
+	    // 	column: "right",
+	    // 	label: "Polish animals female",
+	    // 	splitters: [splitterAfter, splitterBefore],
+	    // 	filters: standardFilters,
+	    // 	names: ["Akima","Asaja","Bajka","Czika","Fifi","Fiona","Funia","Gabcia","Harisa","Kiara","Kora","Larisa","Luna","Lula","Maja","Mika","Mila","Misia","Mela","Nala","Nika","Nesti","Nesi","Psota","Punia","Pusia","Roxi","Tonia","Tosia","Zonia","Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
+	    // 	       ]
+	    // },
 	    {
 		column: "left",
 		label: "Old Polish male",
@@ -430,22 +454,6 @@ RealNamesGroups.push(
 			      "The Yellow Silk",
 			      "The Book of Dreams",
 			      
-		       ]
-	    },
-	    {
-		column: "right",
-		label: "Countries",
-		splitters: [splitterAfter, splitterBefore],
-		filters: standardFilters,
-		names: ["Afghanistan","Albania","Algeria","Samoa","Andorra","Angola","Anguilla","Antarctica","Antigua","Barbuda","Argentina","Armenia","Aruba","Australia","Austria","Azerbaijan","Bahamas","Bahrain","Bangladesh","Barbados","Belarus","Belgium","Belize","Benin","Bermuda","Bhutan","Bolivia","Bosnia","Herzegovina","Botswana","Brazil","Brunei","Darussalam","Bulgaria","Burkina","Burundi","Cambodia","Cameroon","Canada","Chad","Chile","China","Cocos","Colombia","Comoros","Congo","Croatia","Cuba","Cyprus","Denmark","Djibouti","Dominica","Ecuador","Egypt","Salvador","Eritrea","Estonia","Ethiopia","Falkland","Finland","France","Gabon","Gambia","Georgia","Germany","Ghana","Gibraltar","Britain","Greece","Greenland","Grenada","Guadeloupe","Guam","Guatemala","Guinea","Guyana","Haiti","Honduras","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kazakhstan","Kenya","Kiribati","Korea","Kosovo","Kuwait","Kyrgyzstan","Lao","Latvia","Lebanon","Lesotho","Liberia","Libya","Liechtenstein","Lithuania","Luxembourg","Macau","Macedonia","Madagascar","Malawi","Malaysia","Maldives","Mali","Malta","Martinique","Mauritania","Mauritius","Mayotte","Mexico","Micronesia","Moldova","Monaco","Mongolia","Montenegro","Montserrat","Morocco","Mozambique","Myanmar","Namibia","Nauru","Nepal","Netherlands","Caledonia","Zealand","Nicaragua","Niger","Nigeria","Niue","Norway","Oman","Pakistan","Palau","Panama","Papua","Guinea","Paraguay","Peru","Philippines","Poland","Portugal","Qatar","Romania","Russia","Rwanda","Samoa","Arabia","Senegal","Serbia","Seychelles","Singapore","Slovakia","Slovenia","Somalia","Spain","Sudan","Suriname","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tajikistan","Tanzania","Thailand","Tibet","Togo","Tokelau","Tonga","Trinidad","Tunisia","Turkey","Turkmenistan","Turks","Tuvalu","Uganda","Ukraine","Uruguay","Uzbekistan","Vanuatu","Vatican","Venezuela","Vietnam","Yemen","Zambia","Zimbabwe",
-		       ]
-	    },
-	    {
-		column: "left",
-		label: "Middle-earth regions",
-		splitters: [splitterAfter, splitterBefore],
-		filters: standardFilters,
-		names: ["Aman","Andrast","Andustar","Anfalas","Anórien","Araman","Arnor","Angmar","Arandor","Avathar","Beleriand","Belfalas","Bree","Calenardhon","Cuiviénen","Dagorlad","Dimbar","Dor Daedeloth","Dor-en-Ernil","Dor-lómin","Dorthonion","Dorwinion","Drúwaith Iaur","Dunland","Dûn","Eldamar","Emerië","Enedwaith","Eriador","Falas","Folde","Forlindon","Forodwaith","Forostar","Gondor","Gorgoroth","Harad","Harlindon","Harondor","Hildórien","Hithlum","Hyarrostar","Ithilien","Khand","Ladros","Lamedon","Lammoth","Lebennin","Lindon","Lithlad","Lossarnach","Lothlann","Minhiriath","Mittalmar","Naith","Mordor","Alalminórë","Araman","Ard-galen","Arvernie","Avathar","Nísimaldar","Núrn","Orrostar","Ossiriand","Parth Galen","Rhovanion","Rhûn","Rohan","Tol Eressëa","Tolfalas","Udûn","Umbar","Valinor",
 		       ]
 	    },
 	]
