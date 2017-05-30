@@ -13,6 +13,8 @@ class NameSet {
 	this._filters = filters
 	this._uiElement = generateNameSetGUI(namesLabel)
 	this._uiElement.childNodes[0].ownerNameSet = this
+
+	this._uiElement.childNodes[1].appendChild(generateElement("span", {textNode: (" (" + this._names.length + ")"),class: "group-box__names_number"}))
     }
     
     get names() {
