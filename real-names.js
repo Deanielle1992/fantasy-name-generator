@@ -12,9 +12,9 @@ const titleSplitterBefore = new Splitter([" ", " the", " of", " for", " in", " a
 //  CapitalizeFilter
 
 const standardFilters = [
+    RepeatedLettersFilter,
     ConsonantsPatternsFilter,
     VowelsPatternsFilter,
-    RepeatedLettersFilter,
     UniquenessFilter,
     NameLengthFilter,
     CapitalizeFilter
@@ -261,40 +261,6 @@ RealNamesGroups.push(
     {
 	label: "Experimantal",
 	nameSets: [
-	    // {
-	    // 	column: "left",
-	    // 	label: "Polish children male",
-	    // 	splitters: [splitterAfter, splitterBefore],
-	    // 	filters: standardFilters,
-	    // 	names: ["Antek", "Kubuś", "Jasio", "Kacperek", "Wojtuś", "Adaś", "Staś", "Alan", "Franek", "Marcelek"
-	    // 	       ]
-	    // },
-
-	    // {
-	    // 	column: "right",
-	    // 	label: "Polish children female",
-	    // 	splitters: [splitterAfter, splitterBefore],
-	    // 	filters: standardFilters,
-	    // 	names: ["Ala", "Ola", "Ela", "Ula", "Lena", "Pola", "Liliana", "Zuzia", "Hania", "Zosia"
-	    // 	       ]
-	    // },
-	    // {
-	    // 	column: "left",
-	    // 	label: "Polish animals male",
-	    // 	splitters: [splitterAfter, splitterBefore],
-	    // 	filters: standardFilters,
-	    // 	names: ["Alamo","Aluś","Amazy","Azis","Bafi","Bakir","Bambo","Bazyl","Bobi","Borys","Bambi","Brunon","Brutus","Bryś","Burek", "Ares", "Maks", "Azor", "Hektor", "Cezar", "Reksio", "Nero"
-	    // 	       ]
-	    // },
-	    
-	    // {
-	    // 	column: "right",
-	    // 	label: "Polish animals female",
-	    // 	splitters: [splitterAfter, splitterBefore],
-	    // 	filters: standardFilters,
-	    // 	names: ["Akima","Asaja","Bajka","Czika","Fifi","Fiona","Funia","Gabcia","Harisa","Kiara","Kora","Larisa","Luna","Lula","Maja","Mika","Mila","Misia","Mela","Nala","Nika","Nesti","Nesi","Psota","Punia","Pusia","Roxi","Tonia","Tosia","Zonia","Sonia", "Diana", "Nuka", "Roksi", "Saba", "Sara", "Tina"
-	    // 	       ]
-	    // },
 	    {
 		column: "left",
 		label: "Old Polish male",
