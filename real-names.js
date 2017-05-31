@@ -265,7 +265,20 @@ RealNamesGroups.push(
 	    
 	]
     },
-
+    {
+	label: "Dictionary words",
+	nameSets: [
+	    {
+		column: "left",
+		label: "Ancient Greek philosophical concepts",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Kalon","Mimesis","Anamnesis","Anamnesis","Doxa","Techne","Episteme","Epoché","Katalepsis","Logos","Adiaphora","Aponia","Arete","Ethos","Eudaimonia","Eupraxis","Euthymia","Ataraxia","Thumos","Hedone","Henosis","Kathekon","Nemesis","Phronesis","Prohairesis","Diairesis","Tetractys","Sophos","Ageneros","Apeiron","Arche","Cosmos","Chaos","Aeon","Demiurgos","Dyad","Monas","Plutarchos","Tetrad","Triad","Hexis","Hylomorphism","Hylozoism","Hypokeimenon","Hypostasis","Physis","Pneuma","Psyche","Telos","Phren","Nous","Metempsychosis","Apatheia",
+		       ]
+	    },
+	    
+	]
+    },
     
     {
 	label: "Experimantal",
