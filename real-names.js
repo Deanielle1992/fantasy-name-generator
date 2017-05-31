@@ -230,6 +230,14 @@ RealNamesGroups.push(
 		filters: standardFilters,
 		names: ["Atid","Azazil","Azrael","Azrail","Dardail","Hafaza","Hamalat","Herut","Israfil","Jabril","Jibrail","Jibril","Jundullah","Malik","Marut","Mikail","Muaqqibat","Munkar","Nakir","Raqibun","Raqib","Ridwan","Zabaniah"
 		       ]
+	    },
+	    {
+		column: "left",
+		label: "Demons",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+		names: ["Abezethibou","Anane","Ananiel","Armaros","Asbeel","Batariel","Bezaliel","Chazaqiel","Gadreel","Lucifer","Naamah","Nelchael","Nisroch","Penemue","Ramiel","Rosier","Sathariel","Shamsiel","Turiel","Yomiel","Zaqiel","Aamon","Abyzou","Adramelech","Alastor","Allocer","Amaymon","Amy","Arakiel","Asmodeus","Azazel","Baal","Baraqiel","Beelzebub","Beleth","Belial","Belphegor","Botis","Bune","Caim","Corson","Crocell","Daniel","Dantalion","Demogorgon","Dusios","Friar Rush","Furfur","Gaap","Gamigin","Isacaron","Gello","Glasya-Labolas","Haagenti","Halphas","Incubus","Kokabiel","Krampus","Leraje","Leviathan","Malphas","Mammon","Marchosias","Morax","Naberius","Nephilim","Orobas","Paimon","Phenex","Purson","Raum","Ronove","Samyaza","Satan","Succubus","Surgat","Tamiel","Tartaruchi","Temeluchus","Valac","Valefar","Vapula","Vassago","Vepar","Vine","Vual","Xaphan","Ziminiar",
+		       ]
 	    }
 	]
     },
@@ -246,6 +254,7 @@ RealNamesGroups.push(
 		       ]
 	    },
 	    {
+		//source: http://www.glyphweb.com/arda/placland.html
 		column: "left",
 		label: "Middle-earth regions",
 		splitters: [splitterAfter, splitterBefore],
