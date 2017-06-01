@@ -22,6 +22,7 @@ class Generator {
 	})
 	this._splitters = Array.from(this._splitters)
 	this._filters = Array.from(this._filters)
+	// console.log("THIS._NAMES:", this._names)
 	this._filters = this._filters.map(filter => new filter(this._names))
 	    
 	// console.log(this._splitters)
@@ -91,6 +92,23 @@ class Generator {
 	}
 	return generatedName
     }
+
+
+    _getRandomName() {
+	const pickedSomething = randomElement(this._names)
+	if (typeof pickedSomething == "string") {
+	    // console.log(pickedSomething)
+	    return pickedSomething
+	}
+	else if (pickedSomething instanceof Array) {
+	    // console.log(pickedSomething)
+	    return randomElement(pickedSomething)
+	}
+	else {
+	    throw "the random name not string and not Array"
+	}
+    }
+
     
     generate(amount) {
 	const generated = []
@@ -105,12 +123,12 @@ class Generator {
 	const filtersTriesLimit = 3
 	do {
 	    allTriesCountDown--
+	    // console.log("SPLITTERS:", this._splitters)
 	    currentSplitter = randomElement(this._splitters)
-	    currentFirstPart = currentSplitter.getFirstPart(randomElement(this._names))
-	    currentMiddlePart = currentSplitter.getMiddlePart(randomElement(this._names))
-	    currentLastPart = currentSplitter.getLastPart(randomElement(this._names))
+	    currentFirstPart = currentSplitter.getFirstPart(this._getRandomName())
+	    currentMiddlePart = currentSplitter.getMiddlePart(this._getRandomName())
+	    currentLastPart = currentSplitter.getLastPart(this._getRandomName())
 	    generatedName = currentFirstPart + currentMiddlePart + currentLastPart
-
 
 	    generatedName = this._filtered(generatedName, filtersTriesLimit)
 	    

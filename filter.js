@@ -1,8 +1,10 @@
 class Filter {
-    constructor() {
+    constructor(names) {
 	this._vetoed = false
 	this._changed = false
 	this._filterName = "unnamed filter"
+	// console.log("ARY:", names)
+	this._names = flatten(names)
     }    
     
     get vetoed() {
@@ -58,13 +60,13 @@ class Filter {
 
 class ConsonantsPatternsFilter extends Filter {
     constructor(names) {
-	super()
+	super(names)
 	this._filterName = "consonants patterns"
 	this._consonants = CONSONANTS
 	this._regex = new RegExp("[" + this._consonants.join("|") + "]+", "ig")
 	
 	this._allowedGroups = []
-	names.forEach(name => {
+	this._names.forEach(name => {
 	    let groups = name.match(this._regex)
 	    if (groups) {
 		this._allowedGroups = this._allowedGroups.concat(groups)
@@ -106,7 +108,7 @@ class ConsonantsPatternsFilter extends Filter {
 
 class VowelsPatternsFilter extends Filter {
     constructor(names) {
-	super()
+	super(names)
 	this._filterName = "vowels patterns"
 	this._vowels = [
 	    "a","o","i","e","u","y",
@@ -129,7 +131,7 @@ class VowelsPatternsFilter extends Filter {
 	this._regex = new RegExp("[" + this._vowels.join("|") + "]+", "ig")
 	
 	this._allowedGroups = []
-	names.forEach(name => {
+	this._names.forEach(name => {
 	    let groups = name.match(this._regex)
 	    if (groups) {
 		this._allowedGroups = this._allowedGroups.concat(groups)
@@ -165,11 +167,11 @@ class VowelsPatternsFilter extends Filter {
 
 class RepeatedLettersFilter extends Filter {
     constructor(names) {
-	super()
+	super(names)
 	this._filterName = "repeating letters"
 	this._allowedRepeats = []
 	this._repeatsPattern = /(.)\1+|(.)/ig
-	names.forEach(name => {
+	this._names.forEach(name => {
 	    let repeats = name.match(this._repeatsPattern)
 	    if (repeats) {
 		this._allowedRepeats = this._allowedRepeats.concat(repeats)
@@ -205,9 +207,9 @@ class RepeatedLettersFilter extends Filter {
 
 class UniquenessFilter extends Filter {
     constructor(names) {
-	super()
+	super(names)
 	this._filterName = "uniquennes"
-	this._toAvoid = names.slice()
+	this._toAvoid = this._names.slice()
     }
 
     onFilter(name) {
@@ -233,10 +235,10 @@ class UniquenessFilter extends Filter {
 
 class NameLengthFilter extends Filter {
     constructor(names) {
-	super()
+	super(names)
 	this._filterName = "length filter"
-	const sortedNames = sortByLengthDown(names)
-	const all = names.length
+	const sortedNames = sortByLengthDown(this._names)
+	const all = this._names.length
 	const ANOMALY_RATIO = 0.05
 	
 	this._min = sortedNames[sortedNames.length - 1].length
@@ -265,7 +267,7 @@ class NameLengthFilter extends Filter {
 
 class CapitalizeFilter extends Filter {
     constructor(names) {
-	super()
+	super(names)
 	this._filterName = "capitalize filter"
     }
 
