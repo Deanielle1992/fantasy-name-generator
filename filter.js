@@ -141,7 +141,7 @@ class VowelsPatternsFilter extends Filter {
 	    }
 	})
 	this._allowedGroups = uniqueArray(this._allowedGroups).map(group => group.toLowerCase())
-	console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
+	// console.log("ALLOWED GROUPS: ", this._allowedGroups.sort())
     }
 
     onFilter(name) {
@@ -152,7 +152,7 @@ class VowelsPatternsFilter extends Filter {
 	if (!groups) {
 	    groups = [""]
 	}
-	console.log("GROUPS: ", groups, "name:", name)
+	// console.log("GROUPS: ", groups, "name:", name)
 
 	let isOk = true
 	groups.forEach(group => {

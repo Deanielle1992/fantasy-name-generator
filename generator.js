@@ -112,7 +112,7 @@ class Generator {
     _getRandomNameWithEqualChancesToAnyNameSet(nameSetsAllowed) {
 	
 	const result = []
-	console.log("NAMESETSALLOWED", nameSetsAllowed)
+	// console.log("NAMESETSALLOWED", nameSetsAllowed)
 	const pickedNameSet = randomElement(nameSetsAllowed)
 	result.push(pickedNameSet)
 	const pickedSomething = randomElement(pickedNameSet.names)
