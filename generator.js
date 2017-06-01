@@ -109,6 +109,28 @@ class Generator {
 	}
     }
 
+    _getRandomNameWithEqualChancesToAnyNameSet(nameSetsAllowed) {
+	
+	const result = []
+	console.log("NAMESETSALLOWED", nameSetsAllowed)
+	const pickedNameSet = randomElement(nameSetsAllowed)
+	result.push(pickedNameSet)
+	const pickedSomething = randomElement(pickedNameSet.names)
+	
+	if (typeof pickedSomething == "string") {
+	    // console.log(pickedSomething)
+	    result.push(pickedSomething)
+	}
+	else if (pickedSomething instanceof Array) {
+	    // console.log(pickedSomething)
+	    result.push(randomElement(pickedSomething))
+	}
+	else {
+	    throw "the random name not string and not Array"
+	}
+	return result
+    }
+    
     
     generate(amount) {
 	const generated = []
@@ -121,13 +143,43 @@ class Generator {
 	let changes
 	let allTriesCountDown = amount * 3
 	const filtersTriesLimit = 3
+	let nameSetsToPick
+	let resultOfRandomPick
+
 	do {
 	    allTriesCountDown--
+	    nameSetsToPick = this._nameSets.slice()
 	    // console.log("SPLITTERS:", this._splitters)
+
 	    currentSplitter = randomElement(this._splitters)
-	    currentFirstPart = currentSplitter.getFirstPart(this._getRandomName())
-	    currentMiddlePart = currentSplitter.getMiddlePart(this._getRandomName())
-	    currentLastPart = currentSplitter.getLastPart(this._getRandomName())
+	    resultOfRandomPick = this._getRandomNameWithEqualChancesToAnyNameSet(nameSetsToPick)
+	    removeFromArray(nameSetsToPick, resultOfRandomPick[0])
+	    currentFirstPart = currentSplitter.getFirstPart(resultOfRandomPick[1])
+	    if (nameSetsToPick.length == 0) {
+		nameSetsToPick = this._nameSets.slice()
+	    }
+
+	    currentSplitter = randomElement(this._splitters)
+	    resultOfRandomPick = this._getRandomNameWithEqualChancesToAnyNameSet(nameSetsToPick)
+	    removeFromArray(nameSetsToPick, resultOfRandomPick[0])
+	    currentMiddlePart = currentSplitter.getMiddlePart(resultOfRandomPick[1])
+	    if (nameSetsToPick.length == 0) {
+		if (currentMiddlePart == "") {
+		    nameSetsToPick = [resultOfRandomPick[0]]
+		}
+		else {
+		    nameSetsToPick = this._nameSets.slice()
+		}
+	    }
+
+	    currentSplitter = randomElement(this._splitters)
+	    resultOfRandomPick = this._getRandomNameWithEqualChancesToAnyNameSet(nameSetsToPick)
+	    removeFromArray(nameSetsToPick, resultOfRandomPick[0])
+	    currentLastPart = currentSplitter.getLastPart(resultOfRandomPick[1])
+	    if (nameSetsToPick.length == 0) {
+		nameSetsToPick = this._nameSets.slice()
+	    }
+  	    
 	    generatedName = currentFirstPart + currentMiddlePart + currentLastPart
 
 	    generatedName = this._filtered(generatedName, filtersTriesLimit)
