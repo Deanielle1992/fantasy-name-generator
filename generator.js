@@ -1,4 +1,3 @@
-
 class Generator {
     constructor(nameSets) {
 	this._nameSets = nameSets
