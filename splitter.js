@@ -1,7 +1,7 @@
 class Splitter {
     constructor(separators, caseless=true, where="after") {
 	this._regex = buildRegexToSplit(separators, caseless, where)
-
+	console.log(this._regex)
 	this._separators = separators
 	this._where = where
 	this._caseless = caseless
@@ -16,6 +16,7 @@ class Splitter {
 
     getFirstPart(name) {
 	let parts = this.split(name)
+	console.log("PARTS:", parts)
 	let a = randomInt(0, parts.length - 1)
 	let b = randomInt(0, parts.length - 1)
 	let c = randomInt(0, parts.length - 1)
@@ -25,7 +26,8 @@ class Splitter {
 	//     return ""
 	// }
 	// else {
-	    return parts.slice(0, lastPartIndex + 1).join("")
+	console.log("NAME:", name, "WHERE:", this._where, "FIRST:", parts.slice(0, lastPartIndex + 1).join(""))
+	return parts.slice(0, lastPartIndex + 1).join("")
 	// }
 
     }
@@ -36,6 +38,7 @@ class Splitter {
 	let b = randomInt(0, parts.length - 1)
 	let c = randomInt(0, parts.length - 1)
 	let firstPartIndex = Math.max(a, b, c)
+	console.log("NAME:", name, "WHERE:", this._where, "LAST:", parts.slice(firstPartIndex).join(""))
 	return parts.slice(firstPartIndex).join("")
     }
 
@@ -59,6 +62,8 @@ class Splitter {
 	    return ""
 	}
 	else {
+	    console.log("NAME:", name, "WHERE:", this._where, "MIDDLE:", parts.slice(start, end + 1).join(""))
+
 	    return parts.slice(start, end + 1).join("")
 	}
 	
