@@ -1,7 +1,7 @@
 const splitterAfter = new Splitter(VOWELS, true, "after")
 const splitterBefore = new Splitter(VOWELS, true, "before")
-const titleSplitterAfter = new Splitter([" ", "the ", "of ", "for ", "in ", "an ", "and ", "a ", "or ", "from " ], true, "after")
-const titleSplitterBefore = new Splitter([" ", " the", " of", " for", " in", " an", " and", " a", " or", " from" ], true, "before")
+const titleSplitterAfter = new Splitter(["the ", "of ", "for ", "in ", "an ", "and ", "a ", "or ", "from ", " " ], true, "after")
+const titleSplitterBefore = new Splitter([" the", " of", " for", " in", " an", " and", " a", " or", " from", " " ], true, "before")
 
 // Filters are:
 //  ConsonantsPatternsFilter
