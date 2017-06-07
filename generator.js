@@ -1,4 +1,3 @@
-
 class Generator {
     constructor(nameSets) {
 	this._nameSets = nameSets
@@ -141,7 +140,7 @@ class Generator {
 	let generatedName
 	let vetos
 	let changes
-	let allTriesCountDown = amount * 3
+	let allTriesCountDown = amount * 4 + 50
 	const filtersTriesLimit = 3
 	let nameSetsToPick
 	let resultOfRandomPick
