@@ -1,6 +1,7 @@
 window.addEventListener('load', main)
 
 function main() {
+    let isGenerating = false
     const groups = []
     RealNamesGroups.forEach(realNamesGroup => {
 	groups.push(constructGroup(realNamesGroup))
@@ -65,6 +66,14 @@ function main() {
     const generateButton = document.getElementById("generate-button")
     setActivenessOfGenerateButton()
     setGenerateButtonText()
+
+    generateButton.addEventListener("click", function () {
+	makeUIBusy()
+	window.setTimeout(function(){
+	    generate()
+	    makeUIReady()
+	}, 100)
+    })
     
     const input = new Input(groups)
 
@@ -83,8 +92,8 @@ function main() {
 	// console.log("CHANGE!", input.pickedNameSets)
     })
 
-    generateButton.addEventListener("click", generate)
 
+    
     
     function constructNameSet(rawObject) {
 	return new NameSet(rawObject.names, rawObject.label, rawObject.splitters, rawObject.filters)
@@ -136,6 +145,20 @@ function main() {
 	    generateButton.setAttribute("disabled", true)
 	}
     }
-    
-    
+
+    function makeUIBusy() {
+	generateButton.setAttribute("disabled", true)
+	generateButton.innerText = "Generating names..."
+	generateButton.className = generateButton.className
+
+
+    }
+
+    function makeUIReady() {
+	generateButton.removeAttribute("disabled")
+	setGenerateButtonText()
+    }
+
+
 }
+
