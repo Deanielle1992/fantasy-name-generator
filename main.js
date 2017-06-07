@@ -63,6 +63,7 @@ function main() {
     })
     
     const generateButton = document.getElementById("generate-button")
+    setActivenessOfGenerateButton()
     setGenerateButtonText()
     
     const input = new Input(groups)
@@ -77,6 +78,8 @@ function main() {
     
     input.uiElement.addEventListener("change", function(event) {
 	input.onChanging(event)
+	setActivenessOfGenerateButton()
+	setGenerateButtonText()
 	// console.log("CHANGE!", input.pickedNameSets)
     })
 
@@ -105,11 +108,15 @@ function main() {
 	const generator = new Generator(Array.from(input.pickedNameSets))
 	listOfGenerated.names = generator.generate(radioGroup.getValue())
 	displayNames(listOfGenerated.names)
-
     }
 
     function setGenerateButtonText() {
-	generateButton.textContent = "Generate (" + radioGroup.getValue() + ")"
+	if (generateButton.disabled) {
+	    generateButton.textContent = "Select some nameset or namesets"
+	}
+	else {
+	    generateButton.textContent = "Generate " + radioGroup.getValue() + " names"
+	}
     }
 
     function displayNames(names) {
@@ -120,4 +127,15 @@ function main() {
 	    listOfGenerated.appendChild(generateElement("li", {textNode: name}))
 	})
     }
+
+    function setActivenessOfGenerateButton() {
+	if (document.querySelector("input.group-box__checkbox:checked")) {
+	    generateButton.removeAttribute("disabled")
+	}
+	else {
+	    generateButton.setAttribute("disabled", true)
+	}
+    }
+    
+    
 }
