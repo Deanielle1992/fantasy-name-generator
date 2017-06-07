@@ -1,6 +1,7 @@
 window.addEventListener('load', main)
 
 function main() {
+    let isGenerating = false
     const groups = []
     RealNamesGroups.forEach(realNamesGroup => {
 	groups.push(constructGroup(realNamesGroup))
@@ -63,7 +64,16 @@ function main() {
     })
     
     const generateButton = document.getElementById("generate-button")
+    setActivenessOfGenerateButton()
     setGenerateButtonText()
+
+    generateButton.addEventListener("click", function () {
+	makeUIBusy()
+	window.setTimeout(function(){
+	    generate()
+	    makeUIReady()
+	}, 100)
+    })
     
     const input = new Input(groups)
 
@@ -77,11 +87,13 @@ function main() {
     
     input.uiElement.addEventListener("change", function(event) {
 	input.onChanging(event)
+	setActivenessOfGenerateButton()
+	setGenerateButtonText()
 	// console.log("CHANGE!", input.pickedNameSets)
     })
 
-    generateButton.addEventListener("click", generate)
 
+    
     
     function constructNameSet(rawObject) {
 	return new NameSet(rawObject.names, rawObject.label, rawObject.splitters, rawObject.filters)
@@ -105,11 +117,15 @@ function main() {
 	const generator = new Generator(Array.from(input.pickedNameSets))
 	listOfGenerated.names = generator.generate(radioGroup.getValue())
 	displayNames(listOfGenerated.names)
-
     }
 
     function setGenerateButtonText() {
-	generateButton.textContent = "Generate (" + radioGroup.getValue() + ")"
+	if (generateButton.disabled) {
+	    generateButton.textContent = "Select some nameset or namesets"
+	}
+	else {
+	    generateButton.textContent = "Generate " + radioGroup.getValue() + " names"
+	}
     }
 
     function displayNames(names) {
@@ -120,4 +136,29 @@ function main() {
 	    listOfGenerated.appendChild(generateElement("li", {textNode: name}))
 	})
     }
+
+    function setActivenessOfGenerateButton() {
+	if (document.querySelector("input.group-box__checkbox:checked")) {
+	    generateButton.removeAttribute("disabled")
+	}
+	else {
+	    generateButton.setAttribute("disabled", true)
+	}
+    }
+
+    function makeUIBusy() {
+	generateButton.setAttribute("disabled", true)
+	generateButton.innerText = "Generating names..."
+	generateButton.className = generateButton.className
+
+
+    }
+
+    function makeUIReady() {
+	generateButton.removeAttribute("disabled")
+	setGenerateButtonText()
+    }
+
+
 }
+
