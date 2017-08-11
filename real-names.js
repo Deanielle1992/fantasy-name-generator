@@ -346,7 +346,7 @@ RealNamesGroups.push(
 
 
     {
-	label: "Angels and Demons",
+	label: "Myths",
 	nameSets: [
 	    {
 		// source: https://en.wikipedia.org/wiki/List_of_angels_in_theology
@@ -387,7 +387,7 @@ RealNamesGroups.push(
     },
 
     {
-		// source: 
+		// source:
 		column: "right",
 		label: "Greek mythology female",
 		splitters: [splitterAfter, splitterBefore],
@@ -400,7 +400,7 @@ RealNamesGroups.push(
 
 
 
-    
+
     {
 	label: "Geographical names",
 	nameSets: [
