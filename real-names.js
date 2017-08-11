@@ -371,12 +371,36 @@ RealNamesGroups.push(
 		label: "Demons",
 		splitters: [splitterAfter, splitterBefore],
 		filters: standardFilters,
-		names: ["Abezethibou","Anane","Ananiel","Armaros","Asbeel","Batariel","Bezaliel","Chazaqiel","Gadreel","Lucifer","Naamah","Nelchael","Nisroch","Penemue","Ramiel","Rosier","Sathariel","Shamsiel","Turiel","Yomiel","Zaqiel","Aamon","Abyzou","Adramelech","Alastor","Allocer","Amaymon","Amy","Arakiel","Asmodeus","Azazel","Baal","Baraqiel","Beelzebub","Beleth","Belial","Belphegor","Botis","Bune","Caim","Corson","Crocell","Daniel","Dantalion","Demogorgon","Dusios","Friar Rush","Furfur","Gaap","Gamigin","Isacaron","Gello","Glasya-Labolas","Haagenti","Halphas","Incubus","Kokabiel","Krampus","Leraje","Leviathan","Malphas","Mammon","Marchosias","Morax","Naberius","Nephilim","Orobas","Paimon","Phenex","Purson","Raum","Ronove","Samyaza","Satan","Succubus","Surgat","Tamiel","Tartaruchi","Temeluchus","Valac","Valefar","Vapula","Vassago","Vepar","Vine","Vual","Xaphan","Ziminiar",
-		       ]
-	    }
+		names: ["Abezethibou","Anane","Ananiel","Armaros","Asbeel","Batariel","Bezaliel","Chazaqiel","Gadreel","Lucifer","Naamah","Nelchael","Nisroch","Penemue","Ramiel","Rosier","Sathariel","Shamsiel","Turiel","Yomiel","Zaqiel","Aamon","Abyzou","Adramelech","Alastor","Allocer","Amaymon","Amy","Arakiel","Asmodeus","Azazel","Baal","Baraqiel","Beelzebub","Beleth","Belial","Belphegor","Botis","Bune","Caim","Corson","Crocell","Daniel","Dantalion","Demogorgon","Dusios","Friar Rush","Furfur","Gaap","Gamigin","Isacaron","Gello","Glasya-Labolas","Haagenti","Halphas","Incubus","Kokabiel","Krampus","Leraje","Leviathan","Malphas","Mammon","Marchosias","Morax","Naberius","Nephilim","Orobas","Paimon","Phenex","Purson","Raum","Ronove","Samyaza","Satan","Succubus","Surgat","Tamiel","Tartaruchi","Temeluchus","Valac","Valefar","Vapula","Vassago","Vepar","Vine","Vual","Xaphan","Ziminiar"      ]
+    },
+
+    {
+		// source:
+		column: "left",
+		label: "Greek mythology male",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+	names: ["Chaos","Cosmos","Kosmos","Ouranos","Uranus","Oceanus","Ogen","Ogenus","Okeanos","Kreios","Krios","Crius","Eros","Iapetus","Japetus","Coeus","Koios","Hyperion","Huperion","Cronus",
+		"Cronos","Kronos","Zeus","Poseidon","Poseidon",
+		"Haides",
+	   ]
+    },
+
+    {
+		// source: 
+		column: "right",
+		label: "Greek mythology female",
+		splitters: [splitterAfter, splitterBefore],
+		filters: standardFilters,
+	names: ["Gaia","Gaea","Rhea","Mnemosyne","Tethys","Theia","Thea","Thia","Euryphaessa","Themis","Phoebe","Phoibe","Hera","Demeter","Hestia",
+	       ]
+    }
 	]
     },
 
+
+
+    
     {
 	label: "Geographical names",
 	nameSets: [
